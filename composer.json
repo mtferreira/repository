@@ -40,7 +40,7 @@
         {
             "name": "Matheus Ferreira",
             "email": "santana.matheusferreira@gmail.com"
-        },
+        }
     ],
     "require": {
         "php": ">=5.5.9",
