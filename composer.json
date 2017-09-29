@@ -1,5 +1,5 @@
 {
-    "name": "rinvex/repository",
+    "name": "mtferreira/repository",
     "description": "Rinvex Repository is a simple, intuitive, and smart implementation of Active Repository with extremely flexible & granular caching system for Laravel, used to abstract the data layer, making applications more flexible to maintain.",
     "keywords": [
         "rinvex",
@@ -36,7 +36,11 @@
         {
             "name": "The Generous PHP Community",
             "homepage": "https://github.com/rinvex/repository/contributors"
-        }
+        },
+        {
+            "name": "Matheus Ferreira",
+            "email": "santana.matheusferreira@gmail.com"
+        },
     ],
     "require": {
         "php": ">=5.5.9",
