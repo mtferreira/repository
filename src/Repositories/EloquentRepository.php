@@ -206,7 +206,7 @@ class EloquentRepository extends BaseRepository
         $created = $instance->save();
 
         // Fire the created event
-        $this->getContainer('events')->fire($this->getRepositoryId().'.entity.created', [$this, $instance]);
+        $this->getContainer('events')->dispatch($this->getRepositoryId().'.entity.created', [$this, $instance]);
 
         // Return instance
         return [
@@ -237,7 +237,7 @@ class EloquentRepository extends BaseRepository
             $updated = $instance->save();
 
             // Fire the updated event
-            $this->getContainer('events')->fire($this->getRepositoryId().'.entity.updated', [$this, $instance]);
+            $this->getContainer('events')->dispatch($this->getRepositoryId().'.entity.updated', [$this, $instance]);
         }
 
         return [
@@ -264,7 +264,7 @@ class EloquentRepository extends BaseRepository
             $deleted = $instance->delete();
 
             // Fire the deleted event
-            $this->getContainer('events')->fire($this->getRepositoryId().'.entity.deleted', [$this, $instance]);
+            $this->getContainer('events')->dispatch($this->getRepositoryId().'.entity.deleted', [$this, $instance]);
         }
 
         return [
